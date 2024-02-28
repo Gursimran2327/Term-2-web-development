@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Clothes Shopping - Feedback</title>
+     <!-- CSS Styles -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: lightpink;
+            font-family: 'Arial', sans-serif;
+        }
+        /* Header styling */
+        header {
+            background-color: skyblue;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* logo image styling */
+        header img {
+            height: 40px; 
+            margin-right: 10px; 
+        }
+        /* Company name styling */
+        h1 {
+            font-size: 36px; 
+            color: #4b0489; 
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+        }
+        /* Navigation bar styling */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: skyblue;
+            padding: 10px;
+        }
+        /* Navigation link styling */
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        /* Navigation link hover effect  */
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+         /* Main content container styling */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+        }
+         /* Feedback form styling */
+        .feedback-form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+         /* Submit button hover effect */
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+         /* Footer section styling */
+        footer {
+            background-color: skyblue;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .additional-content {
+                flex-direction: column;
+            }}
+
+            .feature {
+                flex: 1 1 100%;
+                margin: 10px 0;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Company Logo"> 
+        <h1>BUTTERFLY PREMIUM</h1>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="account.html">Account</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
+
+    <!-- Feedback form Section -->
+    <div class="container">
+        <div class="feedback-form">
+            <h2>FEEDBACK FORM</h2>
+            <form action="#" method="post"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="message">Feedback:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <input type="submit" value="Submit Feedback">
+            </form>
+        </div>
+    </div>
+    <!--Footer Section -->
+    <footer>
+        &copy; 2024 Kids Clothes Shopping. All rights reserved.
+    </footer>
+</body>
+</html>
